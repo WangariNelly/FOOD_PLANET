@@ -1,3 +1,61 @@
 :root {
+    background-color: black;
+    transition: background-color  .6s;
+    margin: 0;
+    padding:0px;
+    --primary-color: Black;
+    --body-fonts: "Helvetica", "Arial", sans-serif;
+    --line-height: 20;
+  }
+
+  :root:hover {
+    background-color:gray; /*chanes the colours between the bacground after mouse hover */
+  }
+
+  body {
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    background-image: url('/images/WhatsApp Image 2023-07-26 at 11.27.39.jpeg');
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    opacity: 0.5; /*creates a blur like form */
+  }
+
+  h1 {
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*adds box shadows to css */
     
-}
+  }
+  p {
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    line-height: var(--line-height);
+    font-weight: 900;
+    font-size: large;
+
+  }
+
+  a{
+    color: blue;   /*changes the colour of the link*/
+    font-weight: 900;
+    text-decoration: none; /*removes the underline */
+  }
+
+  
